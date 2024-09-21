@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>WeatherApp</title>
+</head>
+<body>
+    <main class="main">
+    
+       <div class="content-box">
+            <div class="title-box"> <h1>WeatherApp</h1></div> 
+            <form id="form" class="form">
+            
+                <div class="data-input">
+                    <label for="city">Elige una ciudad:</label>
+                    <div class="box">
+                        <input class="input" type="text" name="city" id="city" >
+                        <button class="btn-form" type="submit"><img src="/img/icons/search.png" class="search-icon"/></button>
+                    </div>
+                
+                </div>
+                <div id="data-results" class="data-results"></div>
+            </form>
+        </div>
+       
+       
+       
+    </main>
+    <script src="/controllers/controllers.js"></script>
+</body>
+</html>
