@@ -10,7 +10,7 @@ document.getElementById('form').addEventListener('submit',async (e) =>{
             }
         });
         const data = await response.json();
-        console.log(data)
+      
 
         if(response.ok){
           return   document.getElementById('data-results').innerHTML =
