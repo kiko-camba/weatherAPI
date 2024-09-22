@@ -15,7 +15,10 @@ document.getElementById('form').addEventListener('submit',async (e) =>{
         if(response.ok){
           return   document.getElementById('data-results').innerHTML =
             `<img src="${data.icon}" class="weather-icon" /> 
-            <p> La temperatura es de ${data.temperature}ºC</p> <br>`
+            <p> La temperatura es de ${data.temperature}ºC</p> <br>
+            <p>El cielo está ${data.conditions} </p> <br>
+            <p>La humedad es de ${data.humidity}%</p>`
+
         }else{
             document.getElementById('data-results').innerHTML = `<p>Error: ${data.error}</p>`
         }
@@ -29,7 +32,4 @@ document.getElementById('form').addEventListener('submit',async (e) =>{
 
 
 
-
-// `<p>El cielo está ${data.conditions} </p> <br>
-//               La humedad es de ${data.humidity}%`
 
